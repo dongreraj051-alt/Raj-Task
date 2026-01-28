@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - CLOCKWERK</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-clock"></i> CLOCKWERK
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="features.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex ms-3 gap-2">
+                    <input type="text" id="searchInput" class="form-control form-control-sm" placeholder="Search watches..." style="width: 180px;">
+                    <button class="btn btn-outline-light btn-sm" id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <a href="shop.html" class="btn btn-outline-warning position-relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark" id="cartCount">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <section class="bg-dark text-white py-5">
+        <div class="container">
+            <h1 class="display-5 fw-bold">About CLOCKWERK</h1>
+            <p class="lead">Crafting luxury timepieces since 2010</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Brand Story -->
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-4">Our Story</h2>
+                    <p class="mb-3">
+                        Founded in 2010, CLOCKWERK began with a simple passion: to create exceptional timepieces that combine Swiss precision with contemporary design. What started as a small workshop has grown into a globally recognized luxury watch brand trusted by thousands of customers.
+                    </p>
+                    <p class="mb-3">
+                        Every watch we create tells a story of dedication, craftsmanship, and innovation. We believe that a quality timepiece is more than just an instrument for measuring time—it's a statement of style, a companion through life's most important moments, and a heritage piece to pass down through generations.
+                    </p>
+                    <p>
+                        Our commitment to excellence has never wavered. From the finest materials to meticulous assembly, each watch undergoes rigorous quality testing to ensure it meets our exacting standards.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-light p-5 text-center rounded">
+                        <i class="fas fa-hourglass-start fa-10x text-secondary"></i>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-5">
+
+            <!-- Mission & Vision -->
+            <div class="row align-items-center flex-row-reverse">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-4">Mission & Vision</h2>
+                    <div class="mb-4">
+                        <h5 class="fw-bold text-warning mb-2"><i class="fas fa-bullseye"></i> Our Mission</h5>
+                        <p>To create timeless luxury watches that inspire confidence, celebrate individuality, and endure through a lifetime of moments. We are committed to delivering exceptional quality, innovative design, and unparalleled customer service.</p>
+                    </div>
+                    <div>
+                        <h5 class="fw-bold text-warning mb-2"><i class="fas fa-eye"></i> Our Vision</h5>
+                        <p>To be the world's most respected luxury watch brand, known for our dedication to craftsmanship, sustainability, and customer satisfaction. We envision a future where CLOCKWERK timepieces are cherished as heirlooms, passed from generation to generation.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-light p-5 text-center rounded">
+                        <i class="fas fa-compass fa-10x text-secondary"></i>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-5">
+
+            <!-- Why Choose Us -->
+            <div class="row mb-5">
+                <div class="col-lg-12">
+                    <h2 class="fw-bold text-center mb-5">Why Choose CLOCKWERK?</h2>
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-award fa-3x text-warning mb-3"></i>
+                                    <h5 class="card-title fw-bold">Premium Quality</h5>
+                                    <p class="card-text">Swiss-inspired craftsmanship with meticulous attention to detail. Every watch is a masterpiece.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-globe fa-3x text-warning mb-3"></i>
+                                    <h5 class="card-title fw-bold">Worldwide Shipping</h5>
+                                    <p class="card-text">Fast and secure delivery to over 150 countries with full tracking and insurance.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-headset fa-3x text-warning mb-3"></i>
+                                    <h5 class="card-title fw-bold">Expert Support</h5>
+                                    <p class="card-text">Dedicated customer service team available 24/7 to help with any questions or concerns.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-lock fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title fw-bold">Secure Shopping</h5>
+                            <p class="card-text">SSL encryption and secure payment gateways ensure your information is always protected.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-redo fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title fw-bold">Easy Returns</h5>
+                            <p class="card-text">30-day hassle-free return policy. Not satisfied? Return it for a full refund or exchange.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-leaf fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title fw-bold">Sustainability</h5>
+                            <p class="card-text">Eco-friendly packaging and sustainable manufacturing practices for a better future.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-dark text-white py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Join the CLOCKWERK Family</h2>
+            <p class="lead mb-4">Own a piece of timeless luxury</p>
+            <a href="shop.html" class="btn btn-warning btn-lg fw-bold">Explore Our Collection</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="shop.html" class="text-light text-decoration-none">Shop</a></li>
+                        <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Contact Info</h5>
+                    <p>
+                        <i class="fas fa-envelope"></i> <a href="mailto:info@clockwerk.com" class="text-light text-decoration-none">info@clockwerk.com</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-phone"></i> +1 (555) 123-4567
+                    </p>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> 123 Luxury Lane, Manhattan, NY 10001
+                    </p>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Follow Us</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-warning fs-5"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-warning fs-5"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-warning fs-5"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-warning fs-5"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="bg-secondary my-4">
+
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 CLOCKWERK. All Rights Reserved. | Luxury Watch Store</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

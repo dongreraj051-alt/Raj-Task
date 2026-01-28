@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - CLOCKWERK</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-clock"></i> CLOCKWERK
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="features.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex ms-3 gap-2">
+                    <input type="text" id="searchInput" class="form-control form-control-sm" placeholder="Search watches..." style="width: 180px;">
+                    <button class="btn btn-outline-light btn-sm" id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <a href="shop.html" class="btn btn-outline-warning position-relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark" id="cartCount">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <section class="bg-dark text-white py-5">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Shop Our Collection</h1>
+            <p class="lead">Discover our carefully curated selection of premium watches</p>
+        </div>
+    </section>
+
+    <!-- Shop Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <!-- Category Filter -->
+                <div class="col-md-3">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Filter by Category</h5>
+                            <div class="btn-group-vertical w-100" role="group">
+                                <input type="radio" class="btn-check" name="category" id="categoryAll" value="all" checked>
+                                <label class="btn btn-outline-dark text-start" for="categoryAll">
+                                    All Watches
+                                </label>
+
+                                <input type="radio" class="btn-check" name="category" id="categoryMens" value="men">
+                                <label class="btn btn-outline-dark text-start" for="categoryMens">
+                                    Men's Watches
+                                </label>
+
+                                <input type="radio" class="btn-check" name="category" id="categoryWomens" value="women">
+                                <label class="btn btn-outline-dark text-start" for="categoryWomens">
+                                    Women's Watches
+                                </label>
+
+                                <input type="radio" class="btn-check" name="category" id="categoryLuxury" value="luxury">
+                                <label class="btn btn-outline-dark text-start" for="categoryLuxury">
+                                    Luxury Collection
+                                </label>
+
+                                <input type="radio" class="btn-check" name="category" id="categorySports" value="sports">
+                                <label class="btn btn-outline-dark text-start" for="categorySports">
+                                    Sports Watches
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="col-md-9">
+                    <div class="row" id="productsGrid">
+                        <!-- Products will be loaded here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title fw-bold">Shopping Cart</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="cartItems">
+                        <!-- Cart items will be displayed here -->
+                    </div>
+                    <div id="emptyCartMessage" class="alert alert-info">
+                        Your cart is empty. <a href="shop.html">Continue shopping</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div id="cartSummary" class="w-100">
+                        <!-- Cart summary will be displayed here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="shop.html" class="text-light text-decoration-none">Shop</a></li>
+                        <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Contact Info</h5>
+                    <p>
+                        <i class="fas fa-envelope"></i> <a href="mailto:info@clockwerk.com" class="text-light text-decoration-none">info@clockwerk.com</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-phone"></i> +1 (555) 123-4567
+                    </p>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> 123 Luxury Lane, Manhattan, NY 10001
+                    </p>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Follow Us</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-warning fs-5"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-warning fs-5"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-warning fs-5"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-warning fs-5"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="bg-secondary my-4">
+
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 CLOCKWERK. All Rights Reserved. | Luxury Watch Store</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
